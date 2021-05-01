@@ -49,6 +49,14 @@
             </a-marker>
 
             <a-marker preset="custom" type="pattern" url="pattern/pattern_001.patt">
+                <a-image
+                    src="assets/asset.png"
+                    scale="1 1 1"
+                    class="clickable"
+                    rotation="-90 0 0"
+                    gesture-handler
+                ></a-image>
+                <!--
                 <a-obj-model 
                     src="#car-obj" 
                     mtl="#car-mtl" 
@@ -58,7 +66,7 @@
                     visible="true"
                     >
                 </a-obj-model>
-                <!--
+
                 <a-entry>
                      <a-obj-model src="#grass_obj" mtl="#grass_mtl" position="-0.3 0 0" rotation="-90 0 0" scale="0.03 0.03 0.03" visible="true"></a-obj-model>
                     <a-animation attribute="rotation" dur="5000" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
