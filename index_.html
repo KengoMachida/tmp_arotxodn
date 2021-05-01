@@ -5,7 +5,8 @@
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
         <!--script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script-->
         <!-- AR.jsライブラリの読み込み (Marker based) -->
-        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+        <!--script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script-->
+        <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
         <!-- TODO: gesture-detector.js and gesture handler.js -->
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
@@ -20,6 +21,8 @@
             embedded
             gesture-detector
         >
+
+        <!--
         <a-assets>
             <a-asset-item id="car-obj" src="assets/bugatti.obj"></a-asset-item>
             <a-asset-item id="car-mtl" src="assets/bugatti.mtl"></a-asset-item>
@@ -27,6 +30,11 @@
         <a-assets>
             <a-asset-item id="gun-obj" src="assets/hundgun.obj"></a-asset-item>
             <a-asset-item id="gun-mtl" src="assets/hundgun.mtl"></a-asset-item>
+        </a-assets>
+        -->
+        <a-assets>
+            <a-asset-item id="santa-obj" src="assets/santa/santa.obj"></a-asset-item>
+            <a-asset-item id="santa-mtl" src="assets/santa.mtl"></a-asset-item>
         </a-assets>
 
             <a-marker
