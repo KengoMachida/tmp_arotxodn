@@ -62,20 +62,28 @@
                 <a-entity>
                     <a-obj-model src="#gun-obj" mtl="#gun-mtl" position="0 0 0" rotation="0 0 0" scale="2 2 2" visible="true"></a-obj-model>
                      <a-obj-model src="#pig-obj" mtl="#pig-mtl" position="0 0 0" rotation="0 0 0" scale="2 2 2" visible="true"></a-obj-model>
-                    <a-animation attribute="rotation" dur="5000" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
                 </a-entity>
             </a-marker>
 
             <a-marker preset="custom" type="pattern" url="pattern/pattern-005.patt">
-                <a-obj-model 
-                    src="#santa-obj" 
-                    mtl="#santa-mtl" 
-                    position="0 0 0" 
-                    rotation="0 0 0" 
-                    scale="0.5 0.5 0.5" 
-                    visible="true"
-                    >
-                </a-obj-model>
+                <a-entity
+                    animation=  "property: rotation;
+                                from: 0 0 0;
+                                to: 360 0 0; 
+                                dir: alternate; 
+                                dur: 2000;
+                                loop: true;
+                                easing: easiInOutSine">
+                    <a-obj-model 
+                        src="#santa-obj" 
+                        mtl="#santa-mtl" 
+                        position="0 0 0" 
+                        rotation="0 0 0" 
+                        scale="0.5 0.5 0.5" 
+                        visible="true"
+                        >
+                    </a-obj-model>
+                </a-entity>
 
                 <a-text value="santa" position="0 0 0" rotation="0 0 0" scale="2 2 2" color="#ff0000"></a-text>
             </a-marker>
