@@ -7,5 +7,6 @@
 <body>
 	<?php
 		print "aaaa";
+	?>
 </body>
 </html>
