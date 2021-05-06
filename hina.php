@@ -5,6 +5,7 @@
 <title>Template</title>
 </head>
 <body>
-aaaa
+	<?php
+		print "aaaa";
 </body>
 </html>
